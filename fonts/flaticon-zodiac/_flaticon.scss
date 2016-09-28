@@ -1,0 +1,231 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 22/06/2016 15:07
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-aquarius:before { content: "\f100"; }
+.flaticon-aquarius-astrological-sign-symbol:before { content: "\f101"; }
+.flaticon-aquarius-astrological-sign-symbol-1:before { content: "\f102"; }
+.flaticon-aquarius-sign-symbol:before { content: "\f103"; }
+.flaticon-aquarius-water-container-symbol:before { content: "\f104"; }
+.flaticon-aquarius-zodiac-sign-symbol:before { content: "\f105"; }
+.flaticon-aquarius-zodiac-sign-symbol-1:before { content: "\f106"; }
+.flaticon-aquarius-zodiac-symbol-of-female-water-carrier:before { content: "\f107"; }
+.flaticon-aries:before { content: "\f108"; }
+.flaticon-aries-1:before { content: "\f109"; }
+.flaticon-aries-bull-head-front-shape-symbol:before { content: "\f10a"; }
+.flaticon-aries-sign:before { content: "\f10b"; }
+.flaticon-aries-sign-with-big-horns:before { content: "\f10c"; }
+.flaticon-aries-symbol:before { content: "\f10d"; }
+.flaticon-aries-zodiac-sign-symbol:before { content: "\f10e"; }
+.flaticon-aries-zodiac-symbol-of-frontal-goat-head:before { content: "\f10f"; }
+.flaticon-cancer:before { content: "\f110"; }
+.flaticon-cancer-1:before { content: "\f111"; }
+.flaticon-cancer-astrological-sign-of-crab-silhouette:before { content: "\f112"; }
+.flaticon-cancer-astrological-symbol:before { content: "\f113"; }
+.flaticon-cancer-zodiac-sign-of-a-crab:before { content: "\f114"; }
+.flaticon-cancer-zodiac-sign-symbol:before { content: "\f115"; }
+.flaticon-capricorn:before { content: "\f116"; }
+.flaticon-capricorn-1:before { content: "\f117"; }
+.flaticon-capricorn-2:before { content: "\f118"; }
+.flaticon-capricorn-3:before { content: "\f119"; }
+.flaticon-capricorn-astrological-sign-of-head-black-silhouette-with-horns:before { content: "\f11a"; }
+.flaticon-capricorn-goat-animal-shape-of-zodiac-sign:before { content: "\f11b"; }
+.flaticon-capricorn-sign:before { content: "\f11c"; }
+.flaticon-capricorn-symbol-with-big-horn:before { content: "\f11d"; }
+.flaticon-crab-cancer-symbol:before { content: "\f11e"; }
+.flaticon-crab-symbol-for-zodiac-cancer-sign:before { content: "\f11f"; }
+.flaticon-gemini-female-twins-couple-symbol:before { content: "\f120"; }
+.flaticon-gemini-male-twins-zodiac-sign-symbol:before { content: "\f121"; }
+.flaticon-gemini-sign-of-zodiac:before { content: "\f122"; }
+.flaticon-gemini-twins-symbol:before { content: "\f123"; }
+.flaticon-gemini-twins-symbol-1:before { content: "\f124"; }
+.flaticon-gemini-two-twins-heads-symbol:before { content: "\f125"; }
+.flaticon-gemini-zodiac-sign-symbol:before { content: "\f126"; }
+.flaticon-gemini-zodiac-symbol-of-two-twins-faces:before { content: "\f127"; }
+.flaticon-leo:before { content: "\f128"; }
+.flaticon-leo-astrological-sign:before { content: "\f129"; }
+.flaticon-leo-head-front-symbol-of-zodiac-sign:before { content: "\f12a"; }
+.flaticon-leo-lion-astrological-symbol:before { content: "\f12b"; }
+.flaticon-leo-lion-head-side:before { content: "\f12c"; }
+.flaticon-leo-sign:before { content: "\f12d"; }
+.flaticon-leo-zodiac-sign-symbol:before { content: "\f12e"; }
+.flaticon-leo-zodiac-symbol-of-lion-head-from-side-view:before { content: "\f12f"; }
+.flaticon-libra-astrological-symbol-of-a-scale:before { content: "\f130"; }
+.flaticon-libra-balanced-scale-symbol:before { content: "\f131"; }
+.flaticon-libra-balanced-scale-zodiac-symbol:before { content: "\f132"; }
+.flaticon-libra-scale-balance-symbol:before { content: "\f133"; }
+.flaticon-libra-sign:before { content: "\f134"; }
+.flaticon-libra-sign-1:before { content: "\f135"; }
+.flaticon-libra-zodiac-symbol-of-balance:before { content: "\f136"; }
+.flaticon-libra-zodiac-symbol-of-balanced-scale:before { content: "\f137"; }
+.flaticon-pisces:before { content: "\f138"; }
+.flaticon-pisces-astrological-sign:before { content: "\f139"; }
+.flaticon-pisces-astrological-sign-symbol:before { content: "\f13a"; }
+.flaticon-pisces-astrological-sign-symbol-of-two-fishes:before { content: "\f13b"; }
+.flaticon-pisces-fishes:before { content: "\f13c"; }
+.flaticon-pisces-fishes-shapes-sign:before { content: "\f13d"; }
+.flaticon-pisces-sign:before { content: "\f13e"; }
+.flaticon-pisces-zodiac-sign:before { content: "\f13f"; }
+.flaticon-sagittarius:before { content: "\f140"; }
+.flaticon-sagittarius-arch-and-arrow-symbol:before { content: "\f141"; }
+.flaticon-sagittarius-archer-symbol:before { content: "\f142"; }
+.flaticon-sagittarius-arrow-sign:before { content: "\f143"; }
+.flaticon-sagittarius-sign:before { content: "\f144"; }
+.flaticon-sagittarius-sign-of-an-archer:before { content: "\f145"; }
+.flaticon-sagittarius-sign-symbol:before { content: "\f146"; }
+.flaticon-sagittarius-zodiac-symbol:before { content: "\f147"; }
+.flaticon-scorpio:before { content: "\f148"; }
+.flaticon-scorpio-1:before { content: "\f149"; }
+.flaticon-scorpio-vertical-animal-shape-of-zodiac-symbol:before { content: "\f14a"; }
+.flaticon-scorpio-zodiac-symbol:before { content: "\f14b"; }
+.flaticon-scorpion-astrological-sign:before { content: "\f14c"; }
+.flaticon-scorpion-shape:before { content: "\f14d"; }
+.flaticon-scorpion-shape-of-zodiac-sign:before { content: "\f14e"; }
+.flaticon-scorpion-sign-shape:before { content: "\f14f"; }
+.flaticon-taurus:before { content: "\f150"; }
+.flaticon-taurus-astrological-sign-symbol:before { content: "\f151"; }
+.flaticon-taurus-astrological-sign-symbol-1:before { content: "\f152"; }
+.flaticon-taurus-bull-head-symbol-for-zodiac:before { content: "\f153"; }
+.flaticon-taurus-bull-side-view-sign:before { content: "\f154"; }
+.flaticon-taurus-sign:before { content: "\f155"; }
+.flaticon-taurus-zodiac-sign:before { content: "\f156"; }
+.flaticon-taurus-zodiac-symbol-of-bull-head-front:before { content: "\f157"; }
+.flaticon-virgo:before { content: "\f158"; }
+.flaticon-virgo-astrological-sign-symbol:before { content: "\f159"; }
+.flaticon-virgo-astrological-symbol-sign:before { content: "\f15a"; }
+.flaticon-virgo-astrological-symbol-sign-1:before { content: "\f15b"; }
+.flaticon-virgo-female-silhouette:before { content: "\f15c"; }
+.flaticon-virgo-woman-head-shape-symbol:before { content: "\f15d"; }
+.flaticon-virgo-woman-symbol:before { content: "\f15e"; }
+.flaticon-virgo-zodiac-symbol:before { content: "\f15f"; }
+    
+    $font-Flaticon-aquarius: "\f100";
+    $font-Flaticon-aquarius-astrological-sign-symbol: "\f101";
+    $font-Flaticon-aquarius-astrological-sign-symbol-1: "\f102";
+    $font-Flaticon-aquarius-sign-symbol: "\f103";
+    $font-Flaticon-aquarius-water-container-symbol: "\f104";
+    $font-Flaticon-aquarius-zodiac-sign-symbol: "\f105";
+    $font-Flaticon-aquarius-zodiac-sign-symbol-1: "\f106";
+    $font-Flaticon-aquarius-zodiac-symbol-of-female-water-carrier: "\f107";
+    $font-Flaticon-aries: "\f108";
+    $font-Flaticon-aries-1: "\f109";
+    $font-Flaticon-aries-bull-head-front-shape-symbol: "\f10a";
+    $font-Flaticon-aries-sign: "\f10b";
+    $font-Flaticon-aries-sign-with-big-horns: "\f10c";
+    $font-Flaticon-aries-symbol: "\f10d";
+    $font-Flaticon-aries-zodiac-sign-symbol: "\f10e";
+    $font-Flaticon-aries-zodiac-symbol-of-frontal-goat-head: "\f10f";
+    $font-Flaticon-cancer: "\f110";
+    $font-Flaticon-cancer-1: "\f111";
+    $font-Flaticon-cancer-astrological-sign-of-crab-silhouette: "\f112";
+    $font-Flaticon-cancer-astrological-symbol: "\f113";
+    $font-Flaticon-cancer-zodiac-sign-of-a-crab: "\f114";
+    $font-Flaticon-cancer-zodiac-sign-symbol: "\f115";
+    $font-Flaticon-capricorn: "\f116";
+    $font-Flaticon-capricorn-1: "\f117";
+    $font-Flaticon-capricorn-2: "\f118";
+    $font-Flaticon-capricorn-3: "\f119";
+    $font-Flaticon-capricorn-astrological-sign-of-head-black-silhouette-with-horns: "\f11a";
+    $font-Flaticon-capricorn-goat-animal-shape-of-zodiac-sign: "\f11b";
+    $font-Flaticon-capricorn-sign: "\f11c";
+    $font-Flaticon-capricorn-symbol-with-big-horn: "\f11d";
+    $font-Flaticon-crab-cancer-symbol: "\f11e";
+    $font-Flaticon-crab-symbol-for-zodiac-cancer-sign: "\f11f";
+    $font-Flaticon-gemini-female-twins-couple-symbol: "\f120";
+    $font-Flaticon-gemini-male-twins-zodiac-sign-symbol: "\f121";
+    $font-Flaticon-gemini-sign-of-zodiac: "\f122";
+    $font-Flaticon-gemini-twins-symbol: "\f123";
+    $font-Flaticon-gemini-twins-symbol-1: "\f124";
+    $font-Flaticon-gemini-two-twins-heads-symbol: "\f125";
+    $font-Flaticon-gemini-zodiac-sign-symbol: "\f126";
+    $font-Flaticon-gemini-zodiac-symbol-of-two-twins-faces: "\f127";
+    $font-Flaticon-leo: "\f128";
+    $font-Flaticon-leo-astrological-sign: "\f129";
+    $font-Flaticon-leo-head-front-symbol-of-zodiac-sign: "\f12a";
+    $font-Flaticon-leo-lion-astrological-symbol: "\f12b";
+    $font-Flaticon-leo-lion-head-side: "\f12c";
+    $font-Flaticon-leo-sign: "\f12d";
+    $font-Flaticon-leo-zodiac-sign-symbol: "\f12e";
+    $font-Flaticon-leo-zodiac-symbol-of-lion-head-from-side-view: "\f12f";
+    $font-Flaticon-libra-astrological-symbol-of-a-scale: "\f130";
+    $font-Flaticon-libra-balanced-scale-symbol: "\f131";
+    $font-Flaticon-libra-balanced-scale-zodiac-symbol: "\f132";
+    $font-Flaticon-libra-scale-balance-symbol: "\f133";
+    $font-Flaticon-libra-sign: "\f134";
+    $font-Flaticon-libra-sign-1: "\f135";
+    $font-Flaticon-libra-zodiac-symbol-of-balance: "\f136";
+    $font-Flaticon-libra-zodiac-symbol-of-balanced-scale: "\f137";
+    $font-Flaticon-pisces: "\f138";
+    $font-Flaticon-pisces-astrological-sign: "\f139";
+    $font-Flaticon-pisces-astrological-sign-symbol: "\f13a";
+    $font-Flaticon-pisces-astrological-sign-symbol-of-two-fishes: "\f13b";
+    $font-Flaticon-pisces-fishes: "\f13c";
+    $font-Flaticon-pisces-fishes-shapes-sign: "\f13d";
+    $font-Flaticon-pisces-sign: "\f13e";
+    $font-Flaticon-pisces-zodiac-sign: "\f13f";
+    $font-Flaticon-sagittarius: "\f140";
+    $font-Flaticon-sagittarius-arch-and-arrow-symbol: "\f141";
+    $font-Flaticon-sagittarius-archer-symbol: "\f142";
+    $font-Flaticon-sagittarius-arrow-sign: "\f143";
+    $font-Flaticon-sagittarius-sign: "\f144";
+    $font-Flaticon-sagittarius-sign-of-an-archer: "\f145";
+    $font-Flaticon-sagittarius-sign-symbol: "\f146";
+    $font-Flaticon-sagittarius-zodiac-symbol: "\f147";
+    $font-Flaticon-scorpio: "\f148";
+    $font-Flaticon-scorpio-1: "\f149";
+    $font-Flaticon-scorpio-vertical-animal-shape-of-zodiac-symbol: "\f14a";
+    $font-Flaticon-scorpio-zodiac-symbol: "\f14b";
+    $font-Flaticon-scorpion-astrological-sign: "\f14c";
+    $font-Flaticon-scorpion-shape: "\f14d";
+    $font-Flaticon-scorpion-shape-of-zodiac-sign: "\f14e";
+    $font-Flaticon-scorpion-sign-shape: "\f14f";
+    $font-Flaticon-taurus: "\f150";
+    $font-Flaticon-taurus-astrological-sign-symbol: "\f151";
+    $font-Flaticon-taurus-astrological-sign-symbol-1: "\f152";
+    $font-Flaticon-taurus-bull-head-symbol-for-zodiac: "\f153";
+    $font-Flaticon-taurus-bull-side-view-sign: "\f154";
+    $font-Flaticon-taurus-sign: "\f155";
+    $font-Flaticon-taurus-zodiac-sign: "\f156";
+    $font-Flaticon-taurus-zodiac-symbol-of-bull-head-front: "\f157";
+    $font-Flaticon-virgo: "\f158";
+    $font-Flaticon-virgo-astrological-sign-symbol: "\f159";
+    $font-Flaticon-virgo-astrological-symbol-sign: "\f15a";
+    $font-Flaticon-virgo-astrological-symbol-sign-1: "\f15b";
+    $font-Flaticon-virgo-female-silhouette: "\f15c";
+    $font-Flaticon-virgo-woman-head-shape-symbol: "\f15d";
+    $font-Flaticon-virgo-woman-symbol: "\f15e";
+    $font-Flaticon-virgo-zodiac-symbol: "\f15f";
