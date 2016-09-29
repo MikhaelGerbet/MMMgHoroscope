@@ -13,7 +13,7 @@ Module.register("MMMgHoroscope",{
 	defaults: {
 		feeds: [
 			{
-				title: "New York Times",
+				title: "Horoscope",
 				url: "http://voyance.avigora.fr/rss/horoscope_hebdo.php",
 				encoding: "UTF-8" //ISO-8859-1
 			}
@@ -22,7 +22,7 @@ Module.register("MMMgHoroscope",{
 		showPublishDate: true,
 		showDescription: false,
 		reloadInterval:  5 * 60 * 1000, // every 5 minutes
-		updateInterval: 5 * 1000,
+		updateInterval: 30 * 1000,
 		animationSpeed: 2.5 * 1000,
 		maxNewsItems: 0, // 0 for unlimited
 		removeStartTags: '',
@@ -34,7 +34,10 @@ Module.register("MMMgHoroscope",{
 
 	// Define required scripts.
 	getScripts: function() {
-		return ["fonts/flaticon-zodiac/flaticon.css"];
+		return [
+			"moment.js",
+			this.file("fonts/flaticon-zodiac/flaticon.css")
+		];
 	},
 
 	// Define required translations.
@@ -48,6 +51,9 @@ Module.register("MMMgHoroscope",{
 	// Define start sequence.
 	start: function() {
 		Log.info("Starting module: " + this.name);
+
+		// Set locale.
+		moment.locale(config.language);
 
 		this.newsItems = [];
 		this.loaded = false;
@@ -73,14 +79,21 @@ Module.register("MMMgHoroscope",{
 	// Override dom generator.
 	getDom: function() {
 		var wrapper = document.createElement("div");
- 
+
+		if (this.config.feedUrl) {
+			wrapper.className = "small bright";
+			wrapper.innerHTML = "The configuration options for the newsfeed module have changed.<br>Please check the documentation.";
+			return wrapper;
+		}
+
 		if (this.activeItem >= this.newsItems.length) {
 			this.activeItem = 0;
 		}
 
 		if (this.newsItems.length > 0) {
 
-			/*if (this.config.showSourceTitle || this.config.showPublishDate) {
+/*
+			if (this.config.showSourceTitle || this.config.showPublishDate) {
 				var sourceAndTimestamp = document.createElement("div");
 				sourceAndTimestamp.className = "light small dimmed";
 
@@ -104,7 +117,6 @@ Module.register("MMMgHoroscope",{
 				
 			}
 				
-			/*
 			if (this.config.removeStartTags == 'description' || 'both') {
 				
 				if (this.config.showDescription) {
@@ -115,11 +127,7 @@ Module.register("MMMgHoroscope",{
 					}
 				}
 			
-			}*/
-
-
-
-
+			}
 			
 			//Remove selected tags from the end of rss feed items (title or description)
 
@@ -140,11 +148,33 @@ Module.register("MMMgHoroscope",{
 			
 			}
 			
+			var zodiacIcon = document.createElement("span");
+			zodiacIcon.className = "bright big light ";
+
+			switch(this.newsItems[this.activeItem].title){
+				case 'Bélier' : zodiacIcon.className += "flaticon-aries-zodiac-symbol-of-frontal-goat-head" ;break;			
+				case 'Taureau' : zodiacIcon.className += "flaticon-taurus-bull-head-symbol-for-zodiac" ;break;	
+				case 'Gémeaux' : zodiacIcon.className += "flaticon-gemini-zodiac-symbol-of-two-twins-faces" ;break;	
+				case 'Cancer' : zodiacIcon.className += "flaticon-cancer-astrological-sign-of-crab-silhouette" ;break;	
+				case 'Lion' : zodiacIcon.className += "flaticon-leo-zodiac-symbol-of-lion-head-from-side-view" ;break;	
+				case 'Vierge' : zodiacIcon.className += "flaticon-virgo-woman-head-shape-symbol" ;break;	
+				case 'Balance' : zodiacIcon.className += "flaticon-libra-balanced-scale-zodiac-symbol" ;break;	
+				case 'Scorpion' : zodiacIcon.className += "flaticon-scorpion-shape" ;break;	
+				case 'Sagittaire' : zodiacIcon.className += "flaticon-sagittarius-zodiac-symbol" ;break;	
+				case 'Capricorne' : zodiacIcon.className += "flaticon-capricorn-goat-animal-shape-of-zodiac-sign" ;break;	
+				case 'Verseau' : zodiacIcon.className += "flaticon-aquarius-water-container-symbol" ;break;	
+				case 'Poissons' : zodiacIcon.className += "flaticon-pisces-astrological-sign-symbol" ;break;	
+			}
+
+			
+
+			
 			var title = document.createElement("div");
 			title.className = "bright medium light";
 			title.innerHTML = this.newsItems[this.activeItem].title;
+			title.appendChild(zodiacIcon);
 			wrapper.appendChild(title);
-		
+
 			var description = document.createElement("div");
 			description.className = "small light";
 			description.innerHTML = this.newsItems[this.activeItem].description;
@@ -258,6 +288,8 @@ Module.register("MMMgHoroscope",{
 	capitalizeFirstLetter: function(string) {
 		return string.charAt(0).toUpperCase() + string.slice(1);
 	},
+
+
 
 
 });
