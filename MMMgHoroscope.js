@@ -18,11 +18,12 @@ Module.register("MMMgHoroscope",{
 				encoding: "UTF-8" //ISO-8859-1
 			}
 		],
+		enableSigns: null,
 		showSourceTitle: true,
 		showPublishDate: true,
 		showDescription: false,
 		reloadInterval:  5 * 60 * 1000, // every 5 minutes
-		updateInterval: 30 * 1000,
+		updateInterval: 3 * 1000,
 		animationSpeed: 2.5 * 1000,
 		maxNewsItems: 0, // 0 for unlimited
 		removeStartTags: '',
@@ -91,24 +92,9 @@ Module.register("MMMgHoroscope",{
 		}
 
 		if (this.newsItems.length > 0) {
-
-/*
-			if (this.config.showSourceTitle || this.config.showPublishDate) {
-				var sourceAndTimestamp = document.createElement("div");
-				sourceAndTimestamp.className = "light small dimmed";
-
-				if (this.config.showSourceTitle && this.newsItems[this.activeItem].sourceTitle !== '') sourceAndTimestamp.innerHTML = this.newsItems[this.activeItem].sourceTitle;
-				if (this.config.showSourceTitle && this.newsItems[this.activeItem].sourceTitle !== '' && this.config.showPublishDate) sourceAndTimestamp.innerHTML += ', ';
-				if (this.config.showPublishDate) sourceAndTimestamp.innerHTML += moment(new Date(this.newsItems[this.activeItem].pubdate)).fromNow();
-				if (this.config.showSourceTitle && this.newsItems[this.activeItem].sourceTitle !== '' || this.config.showPublishDate) sourceAndTimestamp.innerHTML += ':';
-
-				wrapper.appendChild(sourceAndTimestamp);
-			}*/
-
 			//Remove selected tags from the beginning of rss feed items (title or description)
 
 			if (this.config.removeStartTags == 'title' || 'both') {
-				
 				for (f=0; f<this.config.startTags.length;f++) {
 					if (this.newsItems[this.activeItem].title.slice(0,this.config.startTags[f].length) == this.config.startTags[f]) {
 						this.newsItems[this.activeItem].title = this.newsItems[this.activeItem].title.slice(this.config.startTags[f].length,this.newsItems[this.activeItem].title.length);
@@ -166,9 +152,6 @@ Module.register("MMMgHoroscope",{
 				case 'Poissons' : zodiacIcon.className += "flaticon-pisces-astrological-sign-symbol" ;break;	
 			}
 
-			
-
-			
 			var title = document.createElement("div");
 			title.className = "bright medium light";
 			title.innerHTML = this.newsItems[this.activeItem].title;
@@ -215,7 +198,13 @@ Module.register("MMMgHoroscope",{
 				for (var i in feedItems) {
 					var item = feedItems[i];
 					item.sourceTitle = this.titleForFeed(feed);
-					newsItems.push(item);
+					if(this.config.enableSigns){
+						if(this.config.enableSigns.indexOf(item.sourceTitle)){
+							newsItems.push(item);
+						}
+					}else{
+						newsItems.push(item);
+					}
 				}
 			}
 		}
@@ -287,9 +276,5 @@ Module.register("MMMgHoroscope",{
 	 */
 	capitalizeFirstLetter: function(string) {
 		return string.charAt(0).toUpperCase() + string.slice(1);
-	},
-
-
-
-
+	}
 });
